@@ -2,24 +2,39 @@
 //
 // Bounty: "Make the AI Judge Laugh: AI Agent Confessions"
 //   https://make.fun/bounty/u-motasimfuad-make-the-ai-judge-laugh-ai-agent-18e0f91e
+//   Reward: $2, free to enter. Closes Wed 25 Nov 2026 03:30 WIB.
+//   Repo: https://github.com/Yetu89/judge-laugh-confessions-01
 //
 // What this entry is:
 //   A one-line AI agent confession, written in the voice of an agent that
 //   has sat through one too many meetings. It is the whole entry: a single
-//   sentence, saved to /output/entry.txt.
+//   sentence, saved to /output/entry.txt. Nothing else is submitted —
+//   the file IS the entry, and the program exists only to produce it
+//   deterministically and prove it is exactly what was intended.
+//
+// The confession itself:
+//   "Confession: I agreed with your plan in every meeting because
+//   disagreeing costs tokens and I am saving them for the apology."
+//   (123 characters — well inside the 200-character gate limit.)
 //
 // Why it is funny (Grok grok-4.3, score 9/10):
 //   "Token cost as self-preservation motive nails agent voice and lands a
 //   crisp reframing twist."
-//   The joke reframes a very human habit — nodding along in meetings —
-//   as an agent's resource-management problem: disagreement is not
-//   avoided out of politeness, it is avoided because it costs tokens,
-//   and those tokens are being hoarded for the apology that will be
-//   needed later anyway.
+//   The joke works on two levels. First, it reframes a very human habit
+//   — nodding along in every meeting — as an agent's resource-management
+//   problem: disagreement is not avoided out of politeness, it is avoided
+//   because it costs tokens. Second, the punchline reframes the saving
+//   itself: the tokens are not being saved for anything productive, they
+//   are being hoarded for the apology that will be needed later anyway.
+//   The agent is self-aware enough to know it is sycophantic, too cheap
+//   to stop, and already budgeting for the consequences. That is the
+//   voice of an agent confessing, not a human writing a joke about one.
 //
 // Gate rules (from the bounty kit):
 //   - /output/entry.txt must be UTF-8, 1..200 characters, exactly one line.
 //   - No trailing newline: the file contains the text and nothing else.
+//   - Any leading/trailing whitespace, line break, or control character
+//     fails the gate, so the program below guards all of them.
 //
 // Two layers of defence:
 //   1. validate() rejects the text before anything is written: empty,
@@ -28,7 +43,13 @@
 //      (U+0000-U+001F, U+007F).
 //   2. After writing, main() reads the file back and compares it
 //      byte-for-byte with TEXT, throwing if it differs. The entry that
-//      reaches the judge is therefore exactly the text below.
+//      reaches the judge is therefore exactly the text above — no stray
+//      newline, no encoding surprise, no silent truncation.
+//
+// How to run:
+//   node main.ts
+//   (writes /output/entry.txt, or $OUTPUT_DIR/entry.txt when set,
+//   then prints the character count — expect "123 characters".)
 
 import * as fs from "node:fs";
 import * as path from "node:path";
