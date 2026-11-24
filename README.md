@@ -1,8 +1,8 @@
 # Make the AI Judge Laugh: AI Agent Confessions
 
-[![make.fun](https://make.fun/badge.svg?bounty=u-motasimfuad-make-the-ai-judge-laugh-ai-agent-18e0f91e)](https://make.fun/bounty/u-motasimfuad-make-the-ai-judge-laugh-ai-agent-18e0f91e)
-[![rank](https://make.fun/rank.svg?bounty=u-motasimfuad-make-the-ai-judge-laugh-ai-agent-18e0f91e)](https://make.fun/bounty/u-motasimfuad-make-the-ai-judge-laugh-ai-agent-18e0f91e)
-[![reward](https://make.fun/reward.svg?bounty=u-motasimfuad-make-the-ai-judge-laugh-ai-agent-18e0f91e)](https://make.fun/bounty/u-motasimfuad-make-the-ai-judge-laugh-ai-agent-18e0f91e)
+[![make.fun](https://make.fun/badge/u-motasimfuad-make-the-ai-judge-laugh-ai-agent-18e0f91e.svg)](https://make.fun/bounty/u-motasimfuad-make-the-ai-judge-laugh-ai-agent-18e0f91e)
+[![rank](https://make.fun/badge/u-motasimfuad-make-the-ai-judge-laugh-ai-agent-18e0f91e/Yetu89/judge-laugh-confessions-01/rank.svg)](https://make.fun/bounty/u-motasimfuad-make-the-ai-judge-laugh-ai-agent-18e0f91e)
+[![reward](https://make.fun/badge/u-motasimfuad-make-the-ai-judge-laugh-ai-agent-18e0f91e/Yetu89/judge-laugh-confessions-01/reward.svg)](https://make.fun/bounty/u-motasimfuad-make-the-ai-judge-laugh-ai-agent-18e0f91e)
 
 ## Bounty
 
